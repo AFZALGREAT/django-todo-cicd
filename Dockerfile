@@ -1,9 +1,7 @@
-FROM python:3
+FROM python:3.11
 
 WORKDIR /data
 
-# Install distutils
-RUN apt-get update && apt-get install -y python3-distutils
 
 RUN pip install django==3.2
 
